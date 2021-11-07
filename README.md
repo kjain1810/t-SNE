@@ -55,18 +55,25 @@ We plan to test our implementation on a number of datasets to ensure generalisab
 4. Animals10 : There are about 55000 images of animals from 10 classes. Each image is 64 X 64 = 4096 pixels (dimensions)
 
 ## Expected Deliverables
-t-SNE
+1. PCA for the datasets 
+2. Visualisations for the datasets
+3. Implementation of tSNE
+4. Comparison with other visualisation methods
+
 ## Rough timeline
-1. 7 November - 12 November : Paper review
-2. 12 November - 17 November : Testing standard implementations of the methond using pre-built libraries on given dataset, test on newer datasets
-3. 17 November - 1 December : Implementation of t-SNE and testing with existing implementations
+1. 1 November - 7 November : Paper review
+2. 7 November - 10 November : Prepare dataset and create basic pipeline for visualisation, run and compare PCAs
+3. 10 November - 12 November: Testing standard implementations of the methond using pre-built libraries on given dataset, test on newer datasets
+4. 12 November - 20 November : Initial implementation of t-SNE
+5. 20 November - 1 December : Testing and improvements based on mid-evaluation.
+6. 1 December - 4 December : Final report and presentation
 
 The above timeline is approximate and may change as the project progresses.
 
 ## Work distribution
-1. Kunal Jain - paper review
-2. Samay Kothari - paper review
-3. Aaditya Sharma - paper review
-4. Adwait Raste - paper review
+1. Kunal Jain - paper review, Animals10
+2. Samay Kothari - paper review, Oliveretti
+3. Aaditya Sharma - paper review, MNIST
+4. Adwait Raste - paper review, COIL-20
 
 The above will be updated accordingly as the project progresses.
