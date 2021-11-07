@@ -10,7 +10,13 @@ An implementation of the t-SNE paper for our SMAI course project in Monsoon'21
 The paper is available [here](./tsne.pdf)
 
 ## Problem Statement
-Implement t-SNE
+Visualization of high-dimensional data is an important problem in many different domains, and deals with data of widely varying dimensionality. The goal of visualizing such data is to give a basic understanding of the distributions and possible properties of the dataset we are dealing with in a format that is easily comprehendable by humans.
+
+A lot of techniques have been developed for this task like UMAP, pixel-based techniques, etc. However, most of the earlier techniques focus on simply displaying the high dimensional data in two dimensions without taking into consideration the interpretability of the generated visualisation to the human. This creates a need for a method to represent the data in an interpretable fashion.
+
+This creates the problem of preserving as much of the significant structure of the high dimensional data as possible in the low dimensional visualisation.
+
+![tSNE vs UMAP](./images/tsne_vs_umap.png)
 ## Goals and Approach
 t-Distributed Stochastic Neighbour Embedding(t-SNE) is an unsupervised, non linear technique that is used to do data exploration and visualising high dimensional data. In simpler terms, t-SNE givess us a feel or intuition of how data is arranged in high-dimensional space, using only two or three dimensions. 
 
@@ -38,7 +44,12 @@ $$C = \sum_iKL(P_i||Q_i) = \sum_i\sum_jp_{j|i}log\frac{p_{j|i}}{q_{j|i}}$$
 where $P_i$ represents the conditional probability distribution over all other datapoints given datapoint $x_i$, and $Q_i$ represents the conditional probability distribution over all other map points given map point $y_i$.
 
 ## Dataset
-From t-SNE
+We plan to test our implementation on a number of datasets to ensure generalisability of the technique. We will use the following datasets: 
+1. MNIST : This consists of 60,000 grayscale images of handwritten digits. Each image is 28 X 28 = 784 pixels (dimensions).
+2. Olivertti faces : This is dataset of 400 images created with 40 indivisuals who change their expressions in the images along with small variations in viewpoint. Each image is 92 X 112 = 10,304 pixes (dimensions) labelled with their identity.
+3. COIL-20 : There are 1440 images of 20 objects taken from 72 space orientation (equally spaced). Each image is 32 X 32 = 1,024 pixels (dimensions).
+4. Animals10 : There are about 55000 images of animals from 10 classes. Each image is 64 X 64 = 4096 pixels (dimensions)
+
 ## Expected Deliverables
 t-SNE
 ## Rough timeline
