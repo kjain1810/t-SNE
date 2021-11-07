@@ -20,7 +20,12 @@ This creates the problem of preserving as much of the significant structure of t
 ## Goals and Approach
 Implement t-SNE
 ## Dataset
-From t-SNE
+We plan to test our implementation on a number of datasets to ensure generalisability of the technique. We will use the following datasets: 
+1. MNIST : This consists of 60,000 grayscale images of handwritten digits. Each image is 28 X 28 = 784 pixels (dimensions).
+2. Olivertti faces : This is dataset of 400 images created with 40 indivisuals who change their expressions in the images along with small variations in viewpoint. Each image is 92 X 112 = 10,304 pixes (dimensions) labelled with their identity.
+3. COIL-20 : There are 1440 images of 20 objects taken from 72 space orientation (equally spaced). Each image is 32 X 32 = 1,024 pixels (dimensions).
+4. Animals10 : There are about 55000 images of animals from 10 classes. Each image is 64 X 64 = 4096 pixels (dimensions)
+
 ## Expected Deliverables
 t-SNE
 ## Rough timeline
