@@ -24,7 +24,7 @@ Stochastic Neighbor Embedding (SNE) starts by converting the high-dimensional Eu
 
 The t-SNE algorithm calculates a similarity measure between pairs of instances in the high dimensional space and in the low dimensional space. It then tries to optimize these two similarity measures using a cost function.
 
-The similarity of datapoint $x_j$ to datapoint $x_i$ is the conditional probability, $p_{i|j}$, that $x_i$ will pick $x_j$ as its neighbor if neighbors were picked in proportion to their probability density under a Gaussian centered at $x_i$, the probability is given by: 
+The similarity of datapoint <img src="https://render.githubusercontent.com/render/math?math=x_j"> to datapoint $x_i$ is the conditional probability, $p_{i|j}$, that $x_i$ will pick $x_j$ as its neighbor if neighbors were picked in proportion to their probability density under a Gaussian centered at $x_i$, the probability is given by: 
 
 <img src="https://render.githubusercontent.com/render/math?math=p_{i|j} = \frac{exp(-||x_i-x_j||^2/2\sigma_i^2)}{\sum_{k \neq i}exp(-||x_i-x_k||^2/2\sigma_i^2)}">
 
