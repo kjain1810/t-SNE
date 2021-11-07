@@ -10,7 +10,13 @@ An implementation of the t-SNE paper for our SMAI course project in Monsoon'21
 The paper is available [here](./tsne.pdf)
 
 ## Problem Statement
-Implement t-SNE
+Visualization of high-dimensional data is an important problem in many different domains, and deals with data of widely varying dimensionality. The goal of visualizing such data is to give a basic understanding of the distributions and possible properties of the dataset we are dealing with in a format that is easily comprehendable by humans.
+
+A lot of techniques have been developed for this task like UMAP, pixel-based techniques, etc. However, most of the earlier techniques focus on simply displaying the high dimensional data in two dimensions without taking into consideration the interpretability of the generated visualisation to the human. This creates a need for a method to represent the data in an interpretable fashion.
+
+This creates the problem of preserving as much of the significant structure of the high dimensional data as possible in the low dimensional visualisation.
+
+![tSNE vs UMAP](./images/tsne_vs_umap.png)
 ## Goals and Approach
 Implement t-SNE
 ## Dataset
