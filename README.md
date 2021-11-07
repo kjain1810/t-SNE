@@ -26,8 +26,7 @@ The t-SNE algorithm calculates a similarity measure between pairs of instances i
 
 The similarity of datapoint $x_j$ to datapoint $x_i$ is the conditional probability, $p_{i|j}$, that $x_i$ will pick $x_j$ as its neighbor if neighbors were picked in proportion to their probability density under a Gaussian centered at $x_i$, the probability is given by: 
 
-
-$$p_{i|j} = \frac{exp(-||x_i-x_j||^2/2\sigma_i^2)}{\sum_{k \neq i}exp(-||x_i-x_k||^2/2\sigma_i^2)}$$
+<img src="https://render.githubusercontent.com/render/math?math=p_{i|j} = \frac{exp(-||x_i-x_j||^2/2\sigma_i^2)}{\sum_{k \neq i}exp(-||x_i-x_k||^2/2\sigma_i^2)}">
 
 t-SNE can be explained in three major steps:
 1. Measure the similarities between points in high dimensional space. Then take a bunch of scattered 2-D points, for each datapoint $x_i$ we will center a gaussian distribution over that point. Then we measure the density of all the other points($x_j$)under that gaussian distributions and then renormalize all the points. This gives us a set of probabilities $p_{i|j}$ for all points. These probabilities are propotional to the similarities. All that means is, if data points $x_1$ and $x_2$ have equal values under this gaussian circle then their proportions and similarities are equal and hence you have local similarities in the structure of this high-dimensional space. The Gaussian distribution or circle can be manipulated using what’s called perplexity, which influences the variance of the distribution (circle size) and essentially the number of nearest neighbors.
